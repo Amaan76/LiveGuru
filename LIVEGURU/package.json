@@ -1,0 +1,27 @@
+{
+  "name": "pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/style.css",
+    "nodemon": "nodemon dist/login.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codemirror": "^5.62.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.4.0",
+    "firebase": "^8.7.0",
+    "firebase-admin": "^9.10.0",
+    "firebase-functions": "^3.14.1",
+    "focusable-element": "^1.0.0",
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}

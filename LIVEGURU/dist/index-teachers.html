@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="en">
+  <head>
+
+    <!-- heading font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;900&display=swap" rel="stylesheet">
+<!-- heading font -->
+<style>
+  .alert {
+    margin-left: 40%;
+    width: 300px;
+    border-radius: 15px;
+    opacity: 0.8 ;
+    padding: 20px;
+    background-color: yellow; /* Red */
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: red;
+  }
+  
+  
+      </style>
+
+
+<!-- text font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+<!-- text font -->
+
+    <script src="https://unpkg.com/@daily-co/daily-js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"  
+    />
+    <meta char  set="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiveGuru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+    <!-- <script src="login.js"></script> -->
+    <script src="mainteachers.js"></script>
+  </head>
+  <body style="font-family: 'Cairo', sans-serif; letter-spacing:2px; background-color: #202020">
+    <header style="background-color: 	#202020;" class="text-gray-400 body-font">
+      
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+          <a href="index.html" class="  flex title-font font-medium items-center text-white mb-4 md:mb-0 rounded-2xl px-2 py-2">
+            <img style="width: 60px; height: 60px; border-radius: 50px; position: absolute; right:48%" src="Content\PAges.png">            
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+     
+            
+    
+            <button id="logout" onclick="logOut()" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Logout</button>
+                <a href="help.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Help</a>
+            <a href="index.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Home</a> 
+            <a href="Contact.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Contact</a>
+            <button onclick="changest()" class=" text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-black hover:text-yellow-300 font-extrabold rounded text-lg">Student</button>
+          
+          
+          </nav>
+
+        </a>
+        
+        </div>
+        <hr>
+        <br>
+        <div class="text-center">
+
+          <h style="font-family: 'Archivo', sans-serif;" class="text-yellow-300 text-5xl px-3 tracking-widest font-extrabold text-3xl">LiveGuru</h>
+          <br>
+          <h style="font-family: 'Archivo', sans-serif;" class="text-gray-200 tracking-widest text-opacity-75 font-medium text-lg">You are a Teacher!</h>
+          <br>
+          <h style="font-family: 'Archivo', sans-serif;"class="text-gray-200 tracking-widest text-opacity-75 font-medium text-lg">See the doubts and solve them!</h>
+          <br>
+          <br>
+          <br>
+          <div class="relative mb-4">
+     
+            <label  class="leading-7 text-lg font-medium text-yellow-400" for="standard">Select Standard:</label>
+ 
+            <select onchange="cc1()" class="bg-black text-yellow-300 font-extrabold" id="standard">
+              <option class=" font-extrabold" value="9">9th</option>
+              <option class=" font-extrabold" value="10">10th</option>
+              <option class=" font-extrabold" value="11">11th</option>
+              <option class=" font-extrabold" value="12">12th</option>
+            </select>
+      
+
+
+            <label  class="leading-7 text-lg font-medium text-yellow-400" for="standard"> | Select Subject:</label>
+ 
+            <select onchange="cc()" class="bg-black text-yellow-300 font-extrabold" id="subject">
+              <option class=" font-extrabold" value="Science">Science</option>
+              <option class=" font-extrabold" value="Maths">Maths</option>
+              <option class=" font-extrabold" value="Social Science">Social Science</option>
+              
+            </select>
+            
+          </div>
+          </div>
+      </header>
+    </div>
+
+
+    
+
+
+
+
+
+<img width="100px" id="loader" style="position: absolute; right: 50%; display: none;" height="100px"src="Content/Spinner-1s-200px.svg">
+
+
+
+
+
+    <section style="background-color: 	#202020; display: none" class="text-gray-400 body-font">
+      <div class="container mx-auto flex px-10 py-24 md:flex-row flex-col items-center">
+        <a href="">
+
+
+          
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+         
+
+          <img width="600px" height="500px"  class="object-cover object-center rounded" alt="hero" src="Content/media.png">
+        
+        </div>
+      </a>
+     
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4  font-medium text-white">Username asks
+       
+          </h1>
+         
+          <p  class="mb-8 text-gray-300 leading-relaxed">the whole doubt here</p>
+   
+          <div class="flex justify-center">
+            <button onclick="join()" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-700 rounded text-lg">Solve the doubt</button>
+ 
+          </div>
+        </div>
+      </div>
+      <hr style="border-top: 1px solid yellow;">
+    </section>
+       
+
+      
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+ <script>
+function makesec(postval){
+
+var elmnt = document.getElementsByTagName("section")[0];
+
+var cln = elmnt.cloneNode(true);
+document.body.appendChild(cln);
+
+
+
+
+
+}
+
+
+  loader = document.getElementById("loader").style.display="block"
+  setTimeout(function(){
+
+    loader = document.getElementById("loader").style.display="none"
+  },2000);
+  
+
+
+
+
+function makenewpost(postval,name, snap, url) {
+
+makesec(postval)
+
+
+//var txt = document.getElementsByTagName("textarea")[postval].innerHTML //username;
+
+
+var doubtext = document.getElementsByTagName("p")[postval+1].innerText = snap
+var username = document.getElementsByTagName("h1")[postval+1].innerText = name + " asks"
+ele = document.getElementsByTagName("section")[postval+1].style.display = "block" 
+if(url == undefined){
+
+console.log("no image")
+}
+else{
+imghref = document.getElementsByTagName("img")[postval +3].src = url
+imghrefa = document.getElementsByTagName("a")[postval +4].href = url
+}
+
+
+}
+
+function clear1(){
+
+  document.getElementById("instruction").style.display = "none"
+  localStorage.setItem('ft', 'false')
+}
+
+
+fetchdata()
+
+if(localStorage.getItem("ft") == "true"){
+
+  
+}
+
+  
+function fetchdata(){
+
+
+  subject = localStorage.getItem("subject")
+  standard = localStorage.getItem("standard")
+  console.log("doubts/" + standard + "/"+ subject + "/")
+  firebase.database().ref("doubts/" + standard + "/"+ subject + "/").once("value", function(snapshot){
+  
+    var a = 0;
+    
+    snapshot.forEach(function(ChildSnapshot){
+      
+      console.log(ChildSnapshot.val().doubt, ChildSnapshot.val().url)  
+      makenewpost(a,ChildSnapshot.val().name, ChildSnapshot.val().doubt, ChildSnapshot.val().url);
+      a= a+1;
+      
+  
+    })
+  })
+  
+}
+
+
+
+
+document.getElementById('subject').value =localStorage.getItem('subject')
+document.getElementById('standard').value =localStorage.getItem('standard')
+function join(){
+document.location.href = "videochat.html"
+
+}
+
+
+ </script>
+
+</html>

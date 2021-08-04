@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- heading font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;900&display=swap" rel="stylesheet">
+<!-- heading font -->
+
+
+
+<!-- text font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+<!-- text font -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body
+    style="font-family: 'Cairo', sans-serif; letter-spacing:2px; background-color: #111827"
+    class="bg-gray-800"
+  >
+  <header style="background-color: 	#202020;" class="text-gray-400 body-font">
+      
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+      <a href="index.html" class="  flex title-font font-medium items-center text-white mb-4 md:mb-0 rounded-2xl px-2 py-2">
+        <img style="width: 60px; height: 60px; border-radius: 50px; position: absolute; right:48%" src="Content\PAges.png">        
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+ 
+        
+
+        <button id="logout" onclick="logOut()" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Logout</button>
+            <a href="help.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Help</a>
+        <a href="index.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Home</a> 
+        <a href="Contact.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Contact</a>
+        
+      </nav>
+
+    </a>
+    
+    </div>
+    <div class="text-center">
+      <h style="font-family: 'Archivo', sans-serif;" class="text-yellow-300 text-5xl px-3 tracking-widest font-extrabold text-3xl">LiveGuru</h>
+      <br>
+      <h style="font-family: 'Archivo', sans-serif;" class="text-gray-200 tracking-widest text-opacity-75 font-medium text-lg">Contact Us!</h>
+      <br>
+     
+      </div>
+  </header>
+</div>
+
+
+<section style="background-color: #202020;" class="text-yellow-300 body-font relative">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <!-- <iframe width="100%" height="100%" title="map" class="absolute inset-0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.507658353835!2d73.18015801490651!3d22.33445248530591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf2d4cc3dcb7%3A0x8fdfcfd3efddf6a3!2sNew%20Era%20Senior%20Secondary%20School!5e0!3m2!1sen!2sin!4v1625221949955!5m2!1sen!2sin" "></iframe> -->
+        <iframe   width="100%" height="100%" title="map" class="absolute inset-0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1844.8026028674592!2d73.17034005805566!3d22.368531096322016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc9486caf81fd%3A0xdbc0d61a7bb7e463!2sDwarkesh%20Bungalows!5e0!3m2!1sen!2sin!4v1627403045911!5m2!1sen!2sin"style="filter: grayscale(1) contrast(1.2) opacity(0.16);"></iframe>
+        <div style="background-color: #202020;" class="relative flex flex-wrap py-6 rounded shadow-md">
+          <div  class="lg:w-1/2 px-6">
+            <h2 class="title-font font-semibold text-white tracking-widest text-xs">ADDRESS</h2>
+            <p class="mt-1">A-18, Dwarkesh Bungalows, Behind Leuva Patel Hall, Chhani, 391740, Vadodara</p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2 class="title-font font-semibold text-white tracking-widest text-xs">EMAIL</h2>
+            <a class="text-yellow-500 leading-relaxed">amaanram12096@gmail.com</a>
+            <h2 class="title-font font-semibold text-white tracking-widest text-xs mt-4">PHONE</h2>
+            <p class="leading-relaxed">8734990849</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <h2 class="text-white text-lg mb-1 font-medium title-font">Contact</h2>
+        
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+          <input style=" background: #1d1d1b;
+          box-shadow: inset 5px 5px 8px #0f0f0e,
+                      inset -5px -5px 8px #2b2b28;" type="text" id="name" name="name" class="text-yellow-300 font-extrabold w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+          <input style=" background: #1d1d1b;
+          box-shadow: inset 5px 5px 8px #0f0f0e,
+                      inset -5px -5px 8px #2b2b28;" type="email" id="email" name="email" class="text-yellow-300 font-extrabold w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+          <textarea style=" background: #1d1d1b;
+          box-shadow: inset 5px 5px 8px #0f0f0e,
+                      inset -5px -5px 8px #2b2b28;" id="message" name="message" class="text-yellow-300 font-extrabold w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRwRdsCclKCJQxWmzkqwvHWJkXcXsRQPVNTqqnxMjckcJjMKjNSVpGtqfcxVPhBVczjQSqrQ" class="text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-black hover:text-yellow-300 font-extrabold rounded text-center text-lg">Submit</a>
+
+      </div>
+    </div>
+  </section>
+  
+</body>
+
+</html>

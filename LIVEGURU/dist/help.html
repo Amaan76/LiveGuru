@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- heading font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;900&display=swap" rel="stylesheet">
+   <!-- heading font -->
+   
+   
+   
+   <!-- text font -->
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+   <!-- text font -->
+   
+       <style>
+   
+   
+   
+       </style>
+       <script src="https://unpkg.com/@daily-co/daily-js"></script>
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+       <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+         rel="stylesheet"  
+       />
+       <meta char  set="UTF-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>LiveGuru</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" type="text/css" href="style.css">
+   
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+</head>
+<body style="font-family: 'Cairo', sans-serif; letter-spacing:2px; background-color: #202020">
+    <header style="background-color: 	#202020;" class="text-gray-300 body-font">
+      
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+          <a href="index.html" class="  flex title-font font-medium items-center text-white mb-4 md:mb-0 rounded-2xl px-2 py-2">
+            <img style="width: 60px; height: 60px; border-radius: 50px; position: absolute; right:48%" src="Content\PAges.png">            
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+     
+            
+    
+            <button id="logout" onclick="logOut()" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-300">Logout</button>
+                <a href="help.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-300">Help</a>
+            <a href="index.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-300">Home</a> 
+            <a href="Contact.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-300">Contact</a>
+            <button onclick="change()" class=" text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-black hover:text-yellow-300 font-extrabold rounded text-lg">Teacher</button>
+          </nav>
+
+        </a>
+        
+        </div>
+      
+        <div class="text-center">
+          <h style="font-family: 'Archivo', sans-serif;" class="text-yellow-300 text-5xl px-3 tracking-widest font-extrabold text-3xl">LiveGuru</h>
+          <br>
+          <h style="font-family: 'Archivo', sans-serif;" class="text-gray-200 tracking-widest text-opacity-75 font-medium text-lg">A platform for one on one doubt solving</h>
+
+    
+          <br>
+          <br>
+         </div>
+      </header>
+
+
+
+
+      <div width="100%" height = "500 px" class="rounded-lg h-100 overflow-hidden">
+        <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/zxf9qYDiauY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+      <section style="background-color: 	#202020" class="text-gray-300 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+         
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600">
+               <img src="Content/me.png" >
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-white text-lg">Amaan Ram</h2>
+                  <div class="w-12 h-1 bg-yellow-300 rounded mt-2 mb-4"></div>
+                  <p class="text-base text-gray-300">Age:14 yrs, New Era School Senior Secondary School, Vadodara, Gujarat. I am Programming since last 3 years. Creating websites since 1 year. I like to use firebase as database as a service for client side programming. I am learning new technologies like django and nodeJs for backend.</p>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-yellow-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4">Live Guru is a one on one doubt solving Website. The website consists of two primary modes or roles of teacher and student. You can change the mode by clicking on the "teacher" or "student" button respectively. A student can add a doubt in the text box given and can also add an image so that people can understand your doubt better. The doubt will be uploaded in the teacher section. You can go in the teacher section and browse through all the doubts asked by different people. You inspect the doubts by image provided by the student. When you click on the "solve the doubt" button, you will be connected to the student live via video conferencing. The student can also share the screen if wanted.</p>
+                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+<script>
+
+function change(){
+  document.location.href = "index-teachers.html"
+}
+</script>
+
+</html>

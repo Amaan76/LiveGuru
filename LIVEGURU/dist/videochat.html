@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="en">
+  <head>
+    <!-- heading font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;900&display=swap" rel="stylesheet">
+<!-- heading font -->
+
+
+
+<!-- text font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+<!-- text font -->
+
+    <style>
+
+
+
+    </style>
+    <script src="https://unpkg.com/@daily-co/daily-js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"  
+    />
+    <meta char  set="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiveGuru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+    <!-- <script src="login.js"></script> -->
+    <script src="main.js"></script>
+  </head>
+  <body style="font-family: 'Cairo', sans-serif; letter-spacing:2px; background-color: #202020">
+    <header style="background-color: 	#202020;" class="text-gray-400 body-font">
+      
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+          <a href="index.html" class="  flex title-font font-medium items-center text-white mb-4 md:mb-0 rounded-2xl px-2 py-2">
+            <img style="width: 60px; height: 60px; border-radius: 50px; position: absolute; right:48%" src="Content\PAges.png">            
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+     
+            
+    
+            <button id="logout" onclick="logOut()" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Logout</button>
+      
+                <a href="help.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Help</a>
+            <a href="index.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Home</a> 
+            <a href="Contact.html" class="mr-5 text-yellow-300 font-extrabold cursor-pointer hover:text-gray-400">Contact</a>
+            <button onclick="change()" class=" text-black bg-yellow-300 border-0 py-2 px-6 focus:outline-none hover:bg-black hover:text-yellow-300 font-extrabold rounded text-lg">Teacher</button>
+          </nav>
+
+        </a>
+        
+        </div>
+      
+        <div class="text-center">
+          <h style="font-family: 'Archivo', sans-serif;" class="text-yellow-300 text-5xl px-3 tracking-widest font-extrabold text-3xl">LiveGuru</h>
+          <br>
+          <h style="font-family: 'Archivo', sans-serif;" class="text-gray-200 tracking-widest text-opacity-75 font-medium text-lg">You will be connected to a teacher soon!</h>
+          <br>
+          <h style="font-family: 'Archivo', sans-serif;"class="text-gray-200 tracking-widest text-opacity-75 font-medium text-lg">Hold on</h>
+          <br>
+          <br>
+          <br>
+         </div>
+      </header>
+    </div>
+
+  
+    <!-- <textarea id="doubt" placeholder=" Solve doubt via chat if not able to connect live" style="resize:none; position: fixed; top: 130px; right:15px; width: 375px; height:100px" class="text-yellow-300 bg-black px-2"></textarea>
+   <button id="btn" onclick="solve()" style="position: fixed; top:200; right:15px;width: 100px; height: 40px" class="bg-yellow-300 bg-black px-2 rounded-xl font-extrabold hover:bg-white"> Solve!</button>
+   -->
+  
+   <img src="Content/videocall.svg" >
+
+
+
+   </body>
+<script>
+
+
+
+
+
+
+
+callFrame = window.DailyIframe.createFrame();
+
+callFrame.join({ url: 'https://you.daily.co/hello'});
+
+
+
+
+
+
+    
+
+
+
+
+
+</script>
+
+</html>
+
